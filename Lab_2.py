@@ -211,8 +211,11 @@ while True:
     k+=c
 print(k/n)'''
 #14
-while True:
+#a
+x=True
+while x:
     a=float(input("Podaj liczbe"))
     if a<0 or a%1!=0:
+        x=False
         continue
     print("Liczba jest dodatnia")
