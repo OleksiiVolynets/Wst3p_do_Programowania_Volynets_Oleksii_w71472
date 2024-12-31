@@ -156,7 +156,7 @@ if next(reversed(miesiecy.values()))>sred:
 else:
     print("„Wszystko okay")'''
 #7
-import random
+'''import random
 zbior=set()
 zbior2=set()
 a=random.randint(3,7)
@@ -206,4 +206,43 @@ print(zbior2)
 zbior.clear()
 zbior2.clear()
 print(zbior)
-print(zbior2)
+print(zbior2)'''
+#8
+'''a=input("Podaj 5 liczb przez przecinek ")
+a=a.split(",")
+if len(a)!=5:
+    print("OMG PODAJ 5 LICZBBB!!!!!!!!!")
+a=set(a)
+b=a.pop()
+if b==max(a):
+    print(f"Element{b}jest największą liczbą")
+elif b==min(a):
+    print(f"Element{b}jest najmniejszą liczbą")
+else:
+    print(f"Pobrana liczba {b}")'''
+#9
+'''width = 6
+height = 5
+
+przeciwnicy = [(0, 1), (2, 3), (2, 4), (3, 4)]
+rzeka=[(0,2),(1,2),(2,2),(3,2),(4,2),(5,2),(6,2)]
+
+monety = [(1, 1), (2, 0), (3, 3), (5, 3)]
+for y in range(height):
+    for x in range(width):
+        if (x,y) in przeciwnicy:
+            print("x",end="")
+        elif (x,y) in monety:
+            print("*",end="")
+        elif (x,y) in rzeka:
+            print("=",end="")
+        else:
+            print(".",end="")
+    print()'''
+#10
+alfabet=list("abcdefghijklmnopqrtuvwxyz")
+n=int(input("Podak liczbę n"))
+k=[]
+for i in range(0, len(alfabet), n):
+    k.append(alfabet[i:i + n])
+print(k)
